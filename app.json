@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "SPARKY AI",
+    "slug": "sparky-ai",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#010d1a",
+    "splash": {
+      "backgroundColor": "#010d1a"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#010d1a"
+      },
+      "package": "com.sparky.ai",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.VIBRATE"
+      ],
+      "versionCode": 1
+    },
+    "plugins": [
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "SPARKY needs mic to hear your voice commands",
+          "speechRecognitionPermission": "SPARKY needs speech recognition for voice control"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+}
